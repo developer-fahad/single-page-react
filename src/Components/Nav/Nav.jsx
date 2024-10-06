@@ -47,47 +47,33 @@ const Nav = () => {
 
       {/* Drawer Menu for small devices */}
       <div
-        className={`fixed top-0  flex right-0 h-full w-64 bg-[#00000f] text-white transform ${
+        className={`fixed top-0 right-0 h-full w-64 bg-[#00000f] text-white transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out z-20`}
       >
-        <div className="">
-          <button onClick={closeMenu}><FaX className="text-2xl font-bold" /></button>
+        <div className="py-6 flex justify-end items-end mr-6">
+          <button className="" onClick={closeMenu}>
+            <FaX className="text-2xl font-bold" />
+          </button>
         </div>
-        <ul className="mt-16 space-y-4">
+        <ul className=" text-right mr-6 text-xl uppercase space-y-1">
           <li>
-            <a
-              href="#"
-              onClick={closeMenu}
-              className="block  py-2 hover:bg-gray-700"
-            >
+            <a href="#" onClick={closeMenu} className="block  py-2">
               Home
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              onClick={closeMenu}
-              className="block  py-2 hover:bg-gray-700"
-            >
+            <a href="#" onClick={closeMenu} className="block  py-2">
               About
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              onClick={closeMenu}
-              className="block  py-2 hover:bg-gray-700"
-            >
+            <a href="#" onClick={closeMenu} className="block  py-2 ">
               Services
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              onClick={closeMenu}
-              className="block py-2 hover:bg-gray-700"
-            >
+            <a href="#" onClick={closeMenu} className="block py-2">
               Contact
             </a>
           </li>
